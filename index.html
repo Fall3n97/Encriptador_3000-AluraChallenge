@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Encriptador 3000</title>
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="reset.css">
+      <link rel= "stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;800;900&display=swap" rel="stylesheet">
+      <script src="encrypter.js"></script>
+  </head>
+  <body>
+    <header>
+        <nav class="logo-box">
+            <h1><img src="images/logo.svg" width="100%"></h1>
+        </nav>
+    </header>
+<main>
+  <div class="main-interaction">
+    <section class="user-text">
+        <input type="text" id="raw-txt" placeholder="Escribe tu texto aquí..." autofocus maxlength="150">
+        <div class="btns">
+          <label class="warning">Limitado a <strong>150 caracteres.</strong></label>
+          <label class="warning"><img src="images/warning.png">Escribe únicamente letras <strong>minúsculas y sin acentos.</strong></label>
+          <button type="button" onclick="encrypt()" class="encrypt">¡Encriptar!</button>
+          <button type="button" onclick="desencrypt()" class="desencrypt">¡Desencriptar!</button>
+        </div>
+    </section>
+      <section id="encrypted-txt">
+        <label id="hacker-txt">
+          <img src="images/hacker.png">
+          <br><strong>No se ha encontrado ningun mensaje.</strong> 
+          <br><br>Escribe el texto que desees encriptar o desencriptar.
+        </label>
+       <div id="tooltip">
+          <button type="button" onclick="copy()" id="copy-btn">
+            <span class="tooltiptext" id="myTooltip">Copiar al Portapapeles.</span>
+            Copiar</button>
+        </div>
+      </section>
+  </div>
+</main>
+
+<footer>
+    <p class="info-site">Coded by Ian Badillo - &copy 2023
+      <br><a href="https://github.com/Fall3n97/Encriptador_3000-AluraChallenge" target="_blank"><img src="images/github.png" width="100%"></a></p>
+    </p>
+</footer>
+
+  </body>
+</html>
